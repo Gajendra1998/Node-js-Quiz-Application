@@ -1,0 +1,48 @@
+<%- include('header.ejs') %>
+<link rel="stylesheet" href="style.css">
+
+<body >
+    <h1>Click to start quiz</h1>
+    <div>
+        <form action="/queslist" method="" enctype="application/x-www-form-urlencoded">
+        <button id="post-btn" type="submit" >Start Quiz</button>
+        </form>
+    </div>
+
+<style>
+    body{
+        background-color: rgb(68, 185, 214);
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+    h1{
+        font-style: oblique;
+    }
+
+    #post-btn{
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+#post-btn:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+#post-btn:active {
+	position:relative;
+	top:1px;
+}
+
+    </style>
+
+</body>

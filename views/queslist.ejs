@@ -1,0 +1,44 @@
+<%- include('header.ejs') %>
+<body>
+   
+    <form id = 'submit-form'  >
+        <h1> Quiz Questions</h1>
+
+        <div >
+            <label for="name">Name</label>
+            <input  type="text" placeholder="name" id="name" name="name">
+        </div>
+
+        <ol>
+            <% for(var i=0; i < quiz.length; i++) { %>
+                <li><p><%- quiz[i].question %></p>
+                    <label><input type="radio" id="answer<%- i %>" name="answer<%- i %>" value="A"> <%=  quiz[i].options.A %></label><br>
+                    <label><input type="radio" id="answer<%- i %>" name="answer<%- i %>" value="B"> <%=  quiz[i].options.B %></label><br>
+                    <label><input type="radio" id="answer<%- i %>" name="answer<%- i %>" value="C"> <%=  quiz[i].options.C %></label><br>
+                    <label><input type="radio" id="answer<%- i %>" name="answer<%- i %>" value="D"> <%=  quiz[i].options.D %></label><br>
+                </li>
+            <% } %>
+        </ol>
+
+        </div>
+            <input class="btn btn-primary"  type="submit" value="submit">
+        </div>
+    </form>
+
+    <script>
+        var ques =" <%- JSON.stringify(quiz) %>"    
+    </script>
+
+    <script src="quiz.js"></script>
+    <style>
+        body{
+            background-color: rgb(164, 218, 218);
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            
+        }
+        #name{
+            border-radius: 8px;
+            
+        }
+    </style>
+</body>
