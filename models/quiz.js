@@ -1,4 +1,6 @@
 const mongoose= require('mongoose');
+
+///this is schema
 const options_object = new mongoose.Schema({
     A:{
         type: String,
@@ -30,5 +32,8 @@ const quizSchema= new mongoose.Schema({
         required:true
     }
 });
+
+
+// this is model
 const quiz=mongoose.model('quiz',quizSchema);
 module.exports= quiz;

@@ -1,7 +1,6 @@
 {
   "name": "quiz",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,15 @@
     "express-ejs-layouts": "^2.5.1",
     "jquery": "^3.6.0",
     "mongoose": "^5.12.14"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gajendra1998/Node-js-Quiz-Application.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gajendra1998/Node-js-Quiz-Application/issues"
+  },
+  "homepage": "https://github.com/Gajendra1998/Node-js-Quiz-Application#readme",
+  "description": ""
 }

@@ -8,7 +8,6 @@
             <label for="name">Name</label>
             <input  type="text" placeholder="name" id="name" name="name">
         </div>
-
         <ol>
             <% for(var i=0; i < quiz.length; i++) { %>
                 <li><p><%- quiz[i].question %></p>
@@ -21,14 +20,13 @@
         </ol>
 
         </div>
-            <input class="btn btn-primary"  type="submit" value="submit">
+            <input  class="btn btn-primary"  type="submit" value="submit">
         </div>
     </form>
 
     <script>
-        var ques =" <%- JSON.stringify(quiz) %>"    
+        var ques = <%- JSON.stringify(quiz) %>
     </script>
-
     <script src="quiz.js"></script>
     <style>
         body{

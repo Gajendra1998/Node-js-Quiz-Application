@@ -11,10 +11,10 @@ $('#myModal').on('shown.bs.modal', function () {
              contentType: "application/x-www-form-urlencoded",
              data : {
                  question: $('#question').val(),
-                 option1: $('#option1').val(),
-                 option2: $('#option2').val(),
-                 option3: $('#option3').val(),
-                 option4: $('#option4').val(),
+                 A: $('#option1').val(),
+                 B: $('#option2').val(),
+                 C: $('#option3').val(),
+                 D: $('#option4').val(),
                  answer: $("input[name ='answer']:checked").val(),
              },
              success : function(data){
@@ -38,10 +38,10 @@ $('#myModal').on('shown.bs.modal', function () {
              contentType: "application/x-www-form-urlencoded",
              data : {
                  question: $('#question').val(),
-                 option1: $('#option1').val(),
-                 option2: $('#option2').val(),
-                 option3: $('#option3').val(),
-                 option4: $('#option4').val(),
+                 A: $('#option1').val(),
+                 B: $('#option2').val(),
+                 C: $('#option3').val(),
+                 D: $('#option4').val(),
                  answer: $("input[name ='answer']:checked").val(),
              },
              success : function(data){

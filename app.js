@@ -2,6 +2,7 @@ const express  =  require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts');
 const mongoose=require('mongoose');
+mongoose.set('useFindAndModify', false);
 // Model
 const quiz= require('./models/quiz');
 const user= require('./models/quiz');
@@ -14,8 +15,7 @@ app.use('/', require('./routes/index'));
 app.use(express.static("public"));
 const db = require('./config/keys').MongoURI; 
 
-// connect to mongo db
-
+// connect to mongo db {"db": "mongodb://localhost/quiz"}
 mongoose.connect(db, { useNewUrlParser:true,useUnifiedTopology: true })
  .then(()=>console.log('MongoDb connected...'))
 .catch(err=>console.log(err));
@@ -25,6 +25,5 @@ app.use(expressLayouts);
 //port setup
 const port=5000;
 app.listen(port, () => {
-console.log(`app listening at port:${port}`)    
- 
+console.log(`app listening at port:${port}`)
 });
